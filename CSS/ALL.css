@@ -1,0 +1,173 @@
+/* החלק של התפריט סרגל */
+
+.navbar-custom {
+    background-image: url(/IMG/camufkage.jpg);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: rgb(50, 205, 50);
+    border: 2px solid rgb(42, 157, 42);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+    background-color: rgb(34, 139, 34);
+}
+
+/* החלק של הדף בית, התמונה הראשית */
+
+.image-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(25, 101, 28, 0.318), rgba(50, 205, 50, 0.3)), url(/IMG/newtankionline.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+
+.image-section img {
+    max-width: 90%; 
+    max-height: 90vh;
+    height: auto;
+    width: auto; 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(50, 205, 50, 0.5), 0 0 20px rgba(0, 255, 0, 0.7); /* Lime glow */
+    border: 3px solid #2F4F4F;
+}
+
+/* עיצוב כללי להכל */
+
+body {
+    background-color: #272f3a;
+}
+
+header {
+    background-color: rgb(80, 92, 87);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 300%;
+    margin-bottom: 15px;
+    color: rgba(99, 145, 103, 0.85);
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2, h3 {
+    text-align: start;
+    direction: rtl;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: start;
+    direction: rtl;
+    font-size: 1.9rem;
+}
+
+/* Custom container width */
+.custom-container {
+    max-width: 600px; /* Adjust the value as needed */
+    margin: auto;   /* Centers the container */
+    background-color: #ffffffe0;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+}
+
+.container {
+    background-color: #ffffffe0;
+    padding: 20px;
+    margin-bottom: 2rem;
+    border-radius: 8px; 
+    direction: "ltr";
+}
+
+
+/* שליטת התופס */
+
+.container form .form-label {
+    text-align: left;
+    display: block;
+}
+
+.container form .form-control {
+    text-align: left;
+    direction: ltr;
+}
+
+/* תמונות הגלריה*/
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-item img {
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.sizeDD {
+    width: 150rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.custom-btn {
+    width: 40px;
+    height: 40px;
+}
+
+/* Focus is i guess when button and the stuff that goes aroiund it, interactable stuff */
+button:focus { 
+    /* !important is makes it top level allways! */
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#light-icon, .fa-sync-alt {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.card-body i {
+    font-size: 3rem !important;     
+    line-height: 1;
+    display: inline-block;
+}
